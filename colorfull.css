@@ -1,0 +1,35 @@
+*{
+    background-color: rgb(249, 238, 218);
+}
+
+h1 {
+    color: #211C84;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.sec p {
+    background-color: lavender;
+}
+
+
+#entry {
+    color: #7A73D1;
+}
+
+#analyst {
+    color: #4D55CC;
+}
+
+#scientist {
+    color: #B5A8D5;
+}
+
+a + button {
+    background-color: cornflowerblue;
+}
+
+input {
+    color: brown;
+}
