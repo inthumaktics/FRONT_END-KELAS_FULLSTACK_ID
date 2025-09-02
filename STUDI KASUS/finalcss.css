@@ -64,6 +64,8 @@ body {
     padding: 15px 25px;
     width: 100%;
     max-width: 960px;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -128,7 +130,8 @@ body {
 	color: white;
 }
 
-.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+.pricing-button.is-featured:hover, 
+.pricing-button.is-featured:focus{
 	background-color: #269aff;
 	color: white;
 }
@@ -141,5 +144,6 @@ body {
 		border-bottom: none;
 		border-right: 1px solid #e1f1ff;
 		padding: 25px 50px;
+
 	}
 }
