@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Makanan enak untuk anak kos : </h2> 
+    <ul id="makanan">
+        <li class="np">Nasi padang</li>
+        <li class="abr">Ayam bakar rempah</li>
+        <li class="ag">Ayam geprek</li>
+        <li class="in"> Mie Instan</li>
+        <li class="st">Soto</li>
+    </ul>
+    <input type="text" class="input" value="makanan">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var pembuka = $('<p> <b> Ayo makan yang enak di sini </p>');
+            var menu1 = $('<li> Mie ayam </li>');
+            var menu2 = $('<li> Bakso </li>');
+            var penutup = $('<h3> Selamat Menikmati </h3>');
+            $('#makanan').prepend(menu1);
+            $('#makanan').append(menu2);
+            $('#makanan').before(pembuka);
+            $('#makanan').after(penutup);
+
+            console.log($('.np').text());
+            console.log($('.abr').html());
+            console.log($('.input').val());
+
+            $('.np').text('Nasi Rames');
+            $('.abr').html('<b> Ayam Bakar NyetNyet');
+            $('.input').val('Menu');
+
+            $('.st').remove();
+            $('.in').empty();
+        });
+
+
+    </script>
+    <!-- <script> 
+        $(document).ready(function(){
+            $('#makanan');
+        })
+
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            console.log("jQuery ready");
+            $("li").text("Ayam geprek");
+        })
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            var price = $('<ol> Rp. 12.0000 </ol>');
+            $('.np').append(price);
+        })
+    </script> -->
+
+</body>
+</html>
