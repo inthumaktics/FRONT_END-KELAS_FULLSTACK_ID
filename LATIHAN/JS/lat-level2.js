@@ -184,3 +184,39 @@ for (let i=5; i<= 50; i+=5) {
 };
 
 //4. Array Map - Perkalian 10
+
+
+
+
+
+
+for (let i= 1; i<= 5; i++){
+    let angka = "";
+    for (let j = 1; j <= i; j++){
+        angka += j;
+    }
+    console.log(angka);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//10 Segitiga terbalik 
+for (let i=5; i>=1; i--) {
+    let angka = "";
+    for (let j = 5; j >= i; j--) {
+        angka -= "*";
+    }
+    console.log(angka);
+}
